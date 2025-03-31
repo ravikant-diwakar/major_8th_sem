@@ -1,4 +1,4 @@
-# AI-Powered Crop Recommendation System for India
+# AI-Powered Crop Recommendation System for India: District and Month-Specific Insights for Optimized Agricultural Practices
 
 ## Overview
 
