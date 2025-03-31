@@ -10,6 +10,9 @@ model = joblib.load('crop_recommendation_model.pkl')
 # Load the district-wise rainfall data
 district_rainfall_df = pd.read_parquet('district_wise_rainfall_normal.parquet')
 
+# Load the label encoder
+label_encoder = joblib.load('label_encoder.pkl')
+
 # Function to display the homepage
 def show_homepage():
     st.title("AI-Powered Crop Recommendation System for India: District and Month-Specific Insights for Optimized Agricultural Practices")
@@ -82,7 +85,7 @@ def show_crop_recommendation():
         prediction_classes = model.classes_
         
         # Create a DataFrame for the prediction probabilities
-        prediction_df = pd.DataFrame(prediction_probs, columns=prediction_classes)
+        prediction_df = pd.DataFrame(prediction_probs, columns=label_encoder.inverse_transform(prediction_classes))
         
         # Get the top N recommendations
         top_n = 5  # You can change this value to get more or fewer recommendations
