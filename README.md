@@ -1,4 +1,3 @@
-```markdown
 # AI-Powered Crop Recommendation System for India
 
 ## Overview
