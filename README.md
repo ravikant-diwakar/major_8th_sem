@@ -16,7 +16,9 @@ This project develops an AI-driven crop recommendation system tailored for India
 
 1. Clone the repository:
    ```sh
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   git clone https://github.com/ravikant-diwakar/major_8th_sem
+   ```
+   ```sh
    cd your-repo-name
    ```
 2. Create a virtual environment and activate it:
